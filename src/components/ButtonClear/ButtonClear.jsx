@@ -1,15 +1,21 @@
 import style from './ButtonClear.module.css';
+import propTypes from 'prop-types';
 
-const ButtonClear = () => {
+const ButtonClear = ({clear}) => {
     return(
         <div className={` ${style.ButtonClear}
         bg-secondary 
         border border-white 
         d-flex
-        rounded`}>
+        rounded`}
+        onClick={clear}>
             Clear
         </div>
     )
+}
+
+ButtonClear.propTypes = {
+    clear: propTypes.func
 }
 
 export default ButtonClear;
