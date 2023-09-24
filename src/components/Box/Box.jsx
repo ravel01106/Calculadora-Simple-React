@@ -7,12 +7,32 @@ import {evaluate} from 'mathjs'
 
 const Box = () => {
     const [input, setInput] = useState('');
+    const [result, setResult] = useState(false);
     const operation = (val) => {
         if (val !== '='){
-            setInput(input + val)
+            if(result){
+                setInput(val);
+                setResult(false);
+            }else{
+                setInput(input + val);
+            }
+            
         }else{
-            setInput(evaluate(input))
+            setInput(evaluate(input));
+            setResult(true);
         }
+        /* if (result){
+            setInput('');
+            setResult(false)
+        }else{
+            if (val !== '='){
+                setInput(input + val);
+            }else{
+                setInput(evaluate(input));
+                setResult(true);
+            }
+        } */
+       
         
     } 
    
