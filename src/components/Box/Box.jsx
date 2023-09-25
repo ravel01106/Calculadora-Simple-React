@@ -8,31 +8,23 @@ import {evaluate} from 'mathjs'
 const Box = () => {
     const [input, setInput] = useState('');
     const [result, setResult] = useState(false);
+    const operationSignal = ['+', '-', '*', '/'];
     const operation = (val) => {
         if (val !== '='){
-            if(result){
+            if((result && operationSignal.includes(val))){
+                setInput(input + val);
+                setResult(false);
+            }else if(result) {
                 setInput(val);
                 setResult(false);
-            }else{
+            }
+            else{
                 setInput(input + val);
             }
-            
         }else{
             setInput(evaluate(input));
             setResult(true);
         }
-        /* if (result){
-            setInput('');
-            setResult(false)
-        }else{
-            if (val !== '='){
-                setInput(input + val);
-            }else{
-                setInput(evaluate(input));
-                setResult(true);
-            }
-        } */
-       
         
     } 
    
