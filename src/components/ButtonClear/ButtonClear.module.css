@@ -1,9 +1,10 @@
-.ButtonClear{
-    width: 20.5rem;
-    height: 3rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+.ButtonClear {
+  width: 20.5rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffb4ab;
+  background-color: #410002;
 }

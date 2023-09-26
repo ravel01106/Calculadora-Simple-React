@@ -36,13 +36,14 @@
     transform: rotate(360deg);
   }
 }
-.site-container{
+.site-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
+  background-color: #ffdbc8;
 }
-.site-container main{
+.site-container main {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,15 +1,15 @@
-.Button{
-    width: 3rem;
-    height: 3rem;
-    justify-content: center;
-    align-items: center;
-    margin: 0.4rem 0.7rem;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: darkgray;
-
+.Button {
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem 0.7rem;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #522300;
+  color: white;
 }
-.Button:hover{
-    background-color: grey;
-    color: white;
+.Button:hover {
+  background-color: #d9bde3;
+  color: #3d2946;
 }

@@ -1,11 +1,12 @@
-.Box{
-    width: 25rem;
-    height: 30rem;
-    padding: 0.9rem;
+.Box {
+  width: 20rem;
+  height: 34rem;
+  padding: 0.9rem;
+  background-color: #432b1c;
 }
-.Box .fila{
-    display: flex;
-    margin-top: 0.7rem;
-    align-items: center;
-    justify-content: space-around;
+.Box .fila {
+  display: flex;
+  margin-top: 0.7rem;
+  align-items: center;
+  justify-content: space-around;
 }
